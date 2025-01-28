@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "jsx": "react",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "allowJs": true,
+        "noEmit": false,
+        "outDir": "./dist" // Los archivos compilados se colocarán en la carpeta dist
+    },
+    "include": [
+        "src/**/*" // Todos los archivos dentro de la carpeta src
+    ],
+    "exclude": [
+        "node_modules" // Excluir node_modules
+    ]
+}

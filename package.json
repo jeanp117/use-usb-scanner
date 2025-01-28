@@ -1,0 +1,48 @@
+{
+    "name": "use-usb-scanner",
+    "version": "1.0.0",
+    "description": "A React hook for working with USB scanners via the Web Serial API. Easily connect, disconnect, and manage USB scanners in your app, with full support for parsing data (e.g., barcodes, ID cards) using a custom parser function.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jeanp117/use-usb-scanner.git"
+    },
+    "keywords": [
+        "react",
+        "vite",
+        "next",
+        "hook",
+        "usb",
+        "scanner",
+        "web",
+        "serial",
+        "api",
+        "barcode",
+        "id",
+        "card",
+        "parser"
+    ],
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "scripts": {
+        "build": "tsc",
+        "prepublishOnly": "npm run build",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Jean Rodríguez",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/react": "^19.0.8",
+        "@types/react-dom": "^19.0.3",
+        "typescript": "^5.7.3"
+    },
+    "dependencies": {
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0"
+    }
+}
