@@ -1,21 +1,17 @@
 {
     "compilerOptions": {
-        "target": "ESNext",
-        "module": "ESNext",
-        "moduleResolution": "Node",
-        "jsx": "react",
-        "strict": true,
+        "target": "es5",
+        "lib": ["ESNext", "DOM"],
+        "module": "esnext",
+        "declaration": true, // Habilita la generación de archivos .d.ts
+        "declarationMap": true,
+        "outDir": "./dist",
         "esModuleInterop": true,
+        "moduleResolution": "node",
+        "strict": true,
         "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true,
-        "allowJs": true,
-        "noEmit": false,
-        "outDir": "./dist" // Los archivos compilados se colocarán en la carpeta dist
+        "forceConsistentCasingInFileNames": true
     },
-    "include": [
-        "src/**/*" // Todos los archivos dentro de la carpeta src
-    ],
-    "exclude": [
-        "node_modules" // Excluir node_modules
-    ]
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules"]
 }
